@@ -10,26 +10,25 @@ int main() {
 	int i,j, k;
 	
 	for(i= 0; i < n; i++){
-		int minIndex = i;
-		for(j = i; j < n; j++){
-			if(a[j] < a[minIndex]){
-				minIndex = j; 
-			}
-		}
+	   int minIndex = i;
+         for(j = i; j < n; j++){
+	   if(a[j] < a[minIndex]){
+		minIndex = j; 
+	   }
+	}
 		// swap
 	 for(k = 0; k < n; k++){
-			printf("%d ", a[k]);
-		}
-		
-		printf("\n");
-	
+	    printf("%d ", a[k]);
+	  }
+	   printf("\n");
+	 
 		int temp = a[i];
 		a[i] = a[minIndex];
 		a[minIndex] = temp;
 	}
 	
-  for(k = 0; k < n; k++){
-		printf("%d ", a[k]);
+         for(k = 0; k < n; k++){
+	    printf("%d ", a[k]);
 	}
 	
 	return 0;
